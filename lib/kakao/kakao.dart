@@ -109,4 +109,5 @@ class KakaoMainScreenState extends State<KakaoMainScreen> {
       ),
     );
   }
+
 }
