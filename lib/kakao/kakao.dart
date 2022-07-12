@@ -35,6 +35,7 @@ class KakaoMainScreenState extends State<KakaoMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Row(
           children: const [
             Text(
@@ -79,35 +80,31 @@ class KakaoMainScreenState extends State<KakaoMainScreen> {
           )
         ],
       ),
-      body: Container(),
+      body: ChatScreen(),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.black,
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.person,
-              color: Colors.white,),
-            label: '',
+              color: Colors.white,), label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.chat_bubble_outline_rounded, color: Colors.white,),
-            label: '',
+            icon: Icon(Icons.chat_bubble_outline_rounded, color: Colors.white,), label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.visibility, color: Colors.white,),
-            label: '',
+            icon: Icon(Icons.visibility, color: Colors.white,), label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag_rounded, color: Colors.white,),
-            label: '',
+            icon: Icon(Icons.shopping_bag_rounded, color: Colors.white,), label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.more_horiz_rounded, color: Colors.white,),
-            label: '',
+            icon: Icon(Icons.more_horiz_rounded, color: Colors.white,), label: '',
           ),
         ],
       ),
     );
   }
-
 }
