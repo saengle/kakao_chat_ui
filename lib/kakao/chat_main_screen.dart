@@ -27,19 +27,27 @@ class ChatScreen extends StatelessWidget {
                       children: const [
                         Text('김태리'),
                         SizedBox(width: 4,),
-                        Text('라라라', ),
+                        Text('4', ),
                         SizedBox(width: 4,),
                         Icon(Icons.access_time_filled_sharp)
                       ],
                     ),
-                    const Text('오늘 밥 뭐 먹을래?')
+                    const Text('오늘 밥 뭐 먹을래?',
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.grey
+                    ),)
                   ],
                 ),
                 const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const Text('오후 5:42'),
+                    const Text('오후 5:42', style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.grey,
+                    ),),
+                    SizedBox(height: 8),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),

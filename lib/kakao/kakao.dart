@@ -35,7 +35,7 @@ class KakaoMainScreenState extends State<KakaoMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black26,
         title: Row(
           children: const [
             Text(
@@ -83,7 +83,7 @@ class KakaoMainScreenState extends State<KakaoMainScreen> {
       body: ChatScreen(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.black26,
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
         items: const [
